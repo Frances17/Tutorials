@@ -45,7 +45,7 @@ Enter the following example into your API definition:
           description: Specifies  a timestamp for authenticated requests
           type: date
           example: Sun, 06 Nov 1994 08:49:37 GMT
-        x-bookmobile-copy-source-{*}:
+        x-bookmobile-copy-source-{*}
           description: Field names prefixed with x-bookmobile-copy-source- specify the source bucket and object for a copy operation
           example: x-bookmobile-copy-source-nytFaves:cookbooks
 ```
