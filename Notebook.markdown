@@ -10,7 +10,7 @@ An interactive JavaScript programming environment with embedded documentation.
 Generates an API client based on a saved RAML definition so that calls can be made to the server, returning authenticated, real-time information. 
 
 ### Why is the Notebook so useful?
-RAML's strength lies in its ability to translate the idea of a practically-RESTful API into a workable definition. The Notebook takes the API definition and immediately allows the API consumer to begin interacting with it. Use the Notebook when you'd like to immediately consume or test out an API, at the proof-of-concept. You can actively onboard the API in a live environment with calls to the client server. The autocomplete functionality simplifies the developer's life with prompts for what is available to the developer at that point in the code so that you're not flipping back and forth from the documentation to the Notebook, using the referenced API definition. The Notebook is like a ready-made, persisting sandbox not isolated from the server. If your developer access token gives you a scope allowing you to post information, then you can actively update the server with new information in real-time. Any GET request will return real user information. The Notebook is the perfect playground, allowing you to immediately begin interacting with multiple APIs, seeing how they interact together and inviting collaboration with the ability to fork directly into your own Github repo. 
+RAML's translates the idea of a practically-RESTful API into a workable definition. The Notebook takes that API definition and immediately allows the API consumer to begin interacting with it. Use the Notebook when you'd like to immediately consume or test out an API, at the proof-of-concept. You can actively onboard the API in a live environment with calls to the client server. The autocomplete functionality uses the referenced API definition to prompt what is available to the developer at that point in the code so that you're not flipping back and forth from the documentation. The Notebook is like a ready-made, persisting sandbox not isolated from the server. If your developer access token gives you a scope allowing you to post information, then you can actively update the server with new information in real-time. Any GET request will return real user information. The Notebook is the perfect playground, allowing you to immediately begin interacting with multiple APIs, seeing how they interact together and inviting collaboration with the ability to fork directly into your own Github repo. 
 
 ### Notebook Components
 
@@ -30,7 +30,7 @@ Create an API client so that the Notebook has something from which to something 
 API.createClient
 ```
 
-Notice that as you start working, the Notebook prompts you with several autocomplete options. Use the RAML definition hosted at DropBox for Instagram. 
+Notice that as you start working, the Notebook prompts you with several autocomplete options. For this example, use the RAML definition hosted at DropBox for Instagram. 
 
 ```
 API.createClient('instagram', 'https://dl.dropboxusercontent.com/u/3537856/instagram-v1/api-single.yml');

@@ -16,7 +16,7 @@ At design time - when you are ready to write your API.
 When it comes time to actually design your API, RAML helps you transfer your mental API construct into an actual RAML definition that developers will be able to code JavaScript against in the Notebook. Enter your RAML definition into the Designer to see it come to life in the Console - interactive documentation for your API consumers.
 
 ### How do I use the Designer?
-The Designer is intended to be completely self-explanatory, and when entering long form documentation (i.e. an authentication process) accepts standard Markdown syntax. 
+Just start writing your RAML definition! When entering long form documentation (i.e. an authentication process) accepts standard Markdown syntax. 
 
 Make sure the first line begins with the correct version. Right now, that's 0.8:
 
@@ -30,7 +30,7 @@ Look to the Shelf at the bottom of the Designer. There you'll see a number of ca
 SCREEN SHOT:
 ROOT	PARAMETERS	 SECURITY	RESOURCES	TRAITS AND TYPES
 
-Each category defines what you are able to include at that point in the hierarchy of your API. We encourage you to begin with the root: it will contain information that will apply to the rest of your API definition. For example, naming and versioning your API are important. Clicking on the first two options under Root, title and version, will automatically add them to your definition so that it should now looks like the following:
+Each category defines what you are able to include at that point in the hierarchy of your API. We encourage you to begin with the root: it will contain information that will apply to the rest of your API definition. For example, naming and versioning your API are important. Clicking on the first two options under Root, title and version, will automatically add them to your definition so that it now looks like so:
 
 ```
 #%RAML 0.8
@@ -39,7 +39,7 @@ title: I <3 APIs
 version: v0.1
 ```
 
-As you select options to appear in your definition, they will disappear. You won't need to re-use title or version, as they only appear once in a definition anyway, so this simplifies matters: fewer choices means fewer mistakes!
+As you select options to appear in your definition, they will disappear. You won't need to re-use title or version, as they only appear once in a definition anyway: fewer choices mean fewer mistakes!
 
 If you have any baseUri parameters or pre-determined security schemes to include, do so at this level. You can learn more about how a RAML API definition includes security settings <<here in the spec>> and in <<this level 400 tutorial TBD>>.
 
@@ -52,7 +52,7 @@ baseUri: https://api.iheartthem.com/{version}/
 mediaType: application/json
 ```
 
-Click to enter the baseUri, and update the provided template with your URI: required for a valid RAML definition. 
+Click to enter the baseUri, and update the provided template with your API's URI, required for a valid RAML definition. 
 
 Don't worry about the other categories for now - these are best filled in when you have a few resources and methods already sorted out. We strongly recommend that you write your API and discover patterns as they emerge, rather than trying to predict behavior. This keeps your API organized and concise. Check out the level 200 tutorial for more tips on how to create traits and resource types.
 
