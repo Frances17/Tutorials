@@ -23,3 +23,5 @@ At this point, there are a number of tabs visible to the user. The more methods 
 SCREEN SHOT
 
 Coming Soon: Testing in the RAML Console.
+
+The console works only with a valid RAML spec to you catch mistakes in your definition as you proceed.
